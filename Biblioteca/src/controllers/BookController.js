@@ -6,7 +6,7 @@ exports.addBook = async (req, res) => {
   const { title, author, year, pages, isbn } = req.body;
 
   try {
-    // Criar um novo livro a partir dos dados recebidos
+    // Criar um novo livro a partir dos dados
     const newBook = new Book({
       title,
       author,
