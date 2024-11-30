@@ -6,7 +6,7 @@ const bookRoutes = require('./src/routes/bookRoutes'); // Importa as rotas de li
 app.use(express.json());
 
 // Usar as rotas para livros
-app.use('/books', bookRoutes);
+app.use('/api/books', bookRoutes);
 
 // Exporta o app para ser usado no server.js
 module.exports = app;
